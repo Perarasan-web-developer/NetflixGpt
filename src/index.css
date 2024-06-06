@@ -1,0 +1,55 @@
+ @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.popup{
+    background-color: black;
+    color: white;
+    position: absolute;
+    width: fit-content;
+    height:fit-content;
+    border-radius: 15px;
+    box-shadow: 1px 0px 13px rgb(67, 67, 67);
+    margin-top: 10px;
+    margin-right: 10px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.2s;
+}
+#menu{
+    display: flex;
+    justify-content: flex-end;
+}
+.popup h1{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.popup hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background-color:rgb(57, 56, 56);
+}
+.popup p{
+    width: 160px;
+    font-size: 14px;
+    padding: 5px;
+    margin-left: 5px;
+}
+.popup.open-menu{
+    max-height: 400px;
+    background-color: rgb(40, 37, 37)
+}
+.menu-link{
+    font-size: small;
+}
+.menu-link:hover{
+    font-weight: 600;
+}
+
+#slidebar::-webkit-scrollbar{
+    display: none;
+}
